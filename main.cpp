@@ -37,7 +37,8 @@ int main()
     //Print error if the column and/or row is out of bounds of 0-2
     else if( column < 0 || row < 0 || column > 2 || row > 2 )
     {
-
+    cout<<"Values must be between 0 and 2.\n";
+          
     }
     //TODO: Place the piece and swap turns
     if(turn == X)
