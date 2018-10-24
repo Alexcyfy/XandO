@@ -52,7 +52,7 @@ int main()
     }
     else
     {
-    board[row][column];
+    board[row][column] = O;
     turn = X;
     }
 
