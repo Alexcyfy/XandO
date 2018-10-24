@@ -25,13 +25,10 @@ int main()
 
   do
   {
-  if(turn == X)
-  {
     cout<<turn<<"'s turn.\n";
     cout<<"Which column and row (0-2, or -1 for both to quit)?\n";
     cin>>column;
     cin>>row;
-   }
     //Make sure the user isn't quitting
     if(column == QUIT && row == QUIT)
     {
@@ -44,16 +41,13 @@ int main()
     }
     //TODO: Place the piece and swap turns
     board[row][column] = X;
-    turn = O;
-    if(turn == O)
-    {
+     turn = O;
      cout<<turn<<"'s turn.\n";
      cout<<"Which column and row (0-2, or -1 for both to quit)?\n";
      cin>>column;
      cin>>row;
-    }
-    board[row][column] = O;
-    turn = X;
+     board[row][column] = O;
+     turn = X;
 
 
 
@@ -80,6 +74,7 @@ int main()
       for(int c =0; c < COLUMNS; c++)
       {
       cout<<board[r][c];
+      cout<<" ";
       }
       cout<<endl;
 
